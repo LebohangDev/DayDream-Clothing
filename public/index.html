@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Meta information -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>ClickNBuy</title>
+    <!-- External CSS file -->
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+
+     <!-- External icon libraries -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+</head>
+
+
+
+
+
+
+<body>
+
+    <header>
+        <nav>
+            <a id="Home" style="cursor: pointer;">Home</a>
+            <a id="About" style="cursor: pointer;">About</a>
+            <a id="Contacts" style="cursor: pointer;">Contacts</a>
+            <a class="SignIn" id="SignIn" style="cursor: pointer;">Login</a>
+            <a class="SignUp" id="SignUp" style="cursor: pointer;">SignUp</a>
+            <a class="Logout" id="Logout" style="cursor: pointer;">Logout</a>
+            <i class="ri-shopping-cart-2-fill"></i>
+        </nav>
+
+    
+    </header>
+    <!--slider-->
+    <div class="slider">
+        <!-- list items-->
+        <div class="list">
+
+            <div class="item" id="item1">
+                <img class="men-img" src="./Images/thumb-1920-1324832.png" alt="start">
+                <div class="Mens-Gojo">
+                    <img src="./Images/gojo cut.png" alt="" style="filter: brightness(100%);">
+                </div>
+                <div class="content">
+                    <div class="author">LDEV</div>
+                    <div class="title">DayDream</div>
+                    <div class="topic">Clothing-Men</div>
+                    <div class="des"> DayDream is your go-to online store for trendy and affordable anime style clothing for men, women, and kids. Discover the latest styles and enjoy a seamless shopping experience with our easy-to-navigate website. Dress in style with DayDream – anime fashion made simple.</div>
+                    <div class="buttons">
+                        <button  class="button"> SEE MORE </button>
+                        <button> SUBSCRIBE </button>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="item" id="item2">
+                
+                <img class="women-img" src="./Images/wallpapersden.com_anime-girl-in-mountains-lake_1952x1120.jpg" alt="">
+                <div class="Women-Mountain">
+                    <img src="./Images/image.png" alt="" style="filter: brightness(100%);">
+                </div>
+
+                
+                
+                <div class="content">
+                    
+                    <div class="author">LDEV</div>
+                    <div class="title">DayDream</div>
+                    <div class="topic">Clothing-Women</div>
+                    <div class="des"> DayDream is your go-to online store for trendy and affordable anime style clothing for men, women, and kids. Discover the latest styles and enjoy a seamless shopping experience with our easy-to-navigate website. Dress in style with DayDream – anime fashion made simple.</div>
+                    <div class="buttons">
+                        <button class="button" > SEE MORE </button>
+                        <button> SUBSCRIBE </button>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="item" id="item3">
+                <img class="kids-img" src="./Images/hxh-killua-zoldyck-lightning-desktop-wallpaper-preview.jpg" alt="">
+                <div class="Kids-Killua">
+                    <img src="./Images/Killua cut.png" alt="" style="filter: brightness(100%);">
+                </div>
+                <div class="content">
+                    <div class="author">LDEV</div>
+                    <div class="title">DayDream</div>
+                    <div class="topic">Clothing-Kids</div>
+                    <div class="des"> DayDream is your go-to online store for trendy and affordable anime style clothing for men, women, and kids. Discover the latest styles and enjoy a seamless shopping experience with our easy-to-navigate website. Dress in style with DayDream – anime fashion made simple.</div>
+                    <div class="buttons">
+                        <button   class="button"> SEE MORE </button>
+                        <button id="Sub"> SUBSCRIBE </button>
+                    </div>
+
+                </div>
+
+               
+                
+            </div>
+           
+        </div>
+        <!--thumbnail-->
+        <div class="thumbnail">
+            <div class="item" id="thumbnail1">
+                <img src="./Images/eb83e4e0de11af93c4533342a82c0321.jpg" alt="">
+                <div class="content">
+                    <div class="title">
+                        Mens
+                    </div>
+                    <div class="des">
+                        Clothing
+                    </div>
+                </div>
+
+            </div>
+            <div class="item" id="thumbnail2">
+                <img src="./Images/wallpapersden.com_anime-girl-in-mountains-lake_1952x1120.jpg" alt="">
+                <div class="content">
+                    <div class="title">
+                        Womens
+                    </div>
+                    <div class="des">
+                        clothing
+                    </div>
+                </div>
+
+            </div>
+            <div class="item" id="thumbnail3">
+                <img src="./Images/dcc3b0f06ee0fa6a10a45d133433a72a.jpg" alt="">
+                <div class="content">
+                    <div class="title">
+                        Kids
+                    </div>
+                    <div class="des">
+                        Clothing
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        
+
+        
+
+        <!--Mens Section-->
+        <div class="Store-section" id="MenStore">
+            <div class="item">
+                <img src="./Images/pxfuel.jpg" alt="">
+                <div class="Samurai-guy">
+                    <img src="./Images/Smoking-guy.png" alt="" style="filter: brightness(100%);">
+                </div>
+            </div>
+
+            <div class="title">MEN PRODUCTS</div>
+
+            <div class="MenContainer" id="Mens_Container">
+                
+                <div class="listProduct" id="listProduct"></div>
+                
+
+            </div>
+            <i class="ri-arrow-left-circle-fill" id="leftIcon"></i>
+            <i class="ri-arrow-right-circle-fill" id="rightIcon"></i>
+
+            
+
+
+        </div>
+
+
+        <!--Womens Section-->
+        <div class="Store-section2" id="WomenStore">
+            <div class="Womenitem">
+                <img src="./Images/sunset-anime-comet-stars-scenery-digital-art-4k-wallpaper-uhdpaper.com-771@0@i.jpg" alt="" style=" filter: brightness(50%);">
+            </div>
+            <div class="Women-Glasses">
+                <img src="./Images/Headphones-girl.png" alt="" style="filter: brightness(100%);">
+            </div>
+
+            <div class="title">WOMEN PRODUCTS</div>
+           
+
+            <div class="WomensContainer" id="Womens_Container">
+                
+                <div class="WomenslistProduct" id="WomenslistProduct"></div>
+               
+                
+
+            </div>
+            <i class="ri-arrow-left-circle-fill" id="WomenleftIcon"></i>
+            <i class="ri-arrow-right-circle-fill" id="WomenrightIcon"></i>
+
+            
+
+
+        </div>
+
+         <!--Kids Section-->
+        <div class="Store-section3" id="KidStore">
+            <div class="Kiditem">
+                <img src="./Images/3d-view-sun-sky-from-room.jpg" alt="" style=" filter: brightness(50%);">
+                <div class="Whitch-girl">
+                    <img src="./Images/Whitch-girl.png" alt="" style="filter: brightness(100%);">
+                </div>
+            </div>
+            
+            <div class="title">KIDS PRODUCTS</div>
+            <div class="KidsContainer" id="Kids_Container">
+                
+                <div class="KidslistProduct" id="KidslistProduct"></div>
+                
+
+            </div>
+            <i class="ri-arrow-left-circle-fill" id="KidsleftIcon"></i>
+            <i class="ri-arrow-right-circle-fill" id="KidsrightIcon"></i>
+
+            
+
+
+        </div>
+        <div class="ProductDetail">
+            <!-- list items-->
+            <div class="list">
+                <div class="item" id="item1">
+                    <img src="./Images/pxfuel.jpg" alt="">
+                </div>
+            </div>
+            
+            <h2 class="back">Back</h2> 
+            <div class="title">PRODUCT DETAIL</div>
+            <div class="Container">
+                <div class="detail">
+                    <div class="image">
+
+                        <img src="" alt="">
+                    </div>
+                     <div class="content">
+                        <h1 class="name"></h1>
+                        <div class="price"></div>
+                
+                        <div class="buttons">
+
+                            <button>Check Out</button>
+                            <button>Add To Cart</button>
+                        </div>
+                        <div class="description"></div>
+                        <div class="Size">
+                            <div class="Text">sizes</div>
+                            
+                            <div class="Small">S</div>
+                            <div class="Medium">M</div>
+                            <div class="Large">L</div>
+
+
+                        </div>
+                        
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="WomensProductDetail">
+            <!-- list items-->
+            <div class="list">
+                <div class="item" id="item1">
+                    <img src="./Images/sunset-anime-comet-stars-scenery-digital-art-4k-wallpaper-uhdpaper.com-771@0@i.jpg" alt="" style="filter: brightness(50%);">
+                </div>
+            </div>
+            
+            <h2 class="Womensback">Back</h2>
+            <div class="title">PRODUCT DETAIL</div>
+            <div class="Container">
+                
+                <div class="Womensdetail">
+                    <div class="image">
+
+                        <img src="" alt="">
+                    </div>
+                     <div class="content">
+                        <h1 class="name"></h1>
+                        <div class="price"></div>
+                
+                        <div class="buttons">
+
+                            <button>Check Out</button>
+                            <button>Add To Cart</button>
+                        </div>
+                        <div class="description"></div>
+                        <div class="WomenSize">
+                            <div class="Text">sizes</div>
+                            
+                            <div class="WomenSmall">S</div>
+                            <div class="WomenMedium">M</div>
+                            <div class="WomenLarge">L</div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="KidsProductDetail">
+            <!-- list items-->
+            <div class="list">
+                <div class="item" id="item1">
+                    <img src="./Images/3d-view-sun-sky-from-room.jpg" alt="" style="filter: brightness(50%);">
+                    <a href="https://www.freepik.com/free-ai-image/3d-view-sun-sky-from-room_81507762.htm#query=aesthetic%20anime%20wallpaper&position=17&from_view=keyword&track=ais_user&uuid=adfdb5eb-5366-4067-9491-ea09026f14ff">Image by freepik</a>
+                </div>
+            </div>
+            
+            <h2 class="Kidsback">Back</h2> 
+            <div class="title">PRODUCT DETAIL</div>
+            <div class="Container">
+                
+                <div class="Kidsdetail">
+                    <div class="image">
+
+                        <img src="" alt="">
+                    </div>
+                     <div class="content">
+                        <h1 class="name"></h1>
+                        <div class="price"></div>
+                
+                        <div class="buttons">
+
+                            <button>Check Out</button>
+                            <button>Add To Cart</button>
+                        </div>
+                        <div class="description"></div>
+                        <div class="KidsSize">
+                            <div class="Text">sizes</div>
+                            
+                            <div class="KidsSmall">S</div>
+                            <div class="KidsMedium">M</div>
+                            <div class="KidsLarge">L</div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Register"> 
+            <!-- list items-->
+           <div class="list">
+               <div class="item" id="item1">
+                   <img src="./Images/anime-girl-with-tattoo-katana-4k-wallpaper-uhdpaper.com-739@3@a.jpg" alt="" style="filter: brightness(50%);">
+               </div>
+              
+           </div>
+
+           <div class="SignUp">
+               <!-- Form for registration -->
+               <form class="SignUpForm" id="RegisterForm">
+
+                   <h1>Register</h1>
+                   <div class="txt_field">
+                       <input type="text" class="Name" id="NameRegister" required>
+                       <label>Name</label>
+                    </div>
+                    <div class="txt_field">
+                       <input type="text" class="Username" id="UsernameRegister" required>
+                       <label>Username</label>
+                   </div>
+                   <div class="txt_field">
+                       <input type="email" class="Email" id="EmailRegister" required>
+                       <label>Email</label>
+                   </div>
+                   <div class="txt_field">
+
+                       <input type="password" class="password" id="PasswordRegister" required>
+                       <label>Password</label>
+                   </div>
+                   <div class="txt_field">
+                       <input type="password" class="confirmPassword" id="ConfirmPasswordInput" required>
+                       <label>confirm Password</label>
+                   </div>
+
+                   <!--Gender selection container-->
+                   <div class="Gender-Selection">
+                       <div class="title">
+                           Gender
+                        </div>
+                
+                       <div class="Gender-Category">
+                           <input type="radio" name="gender" id="male">
+                           <label >Male</label>
+                           <input type="radio" name="gender" id="female">
+                           <label >Female</label>
+                           <input type="radio" name="gender" id="other">
+                           <label>Other</label>
+                       </div>
+
+                   </div>
+
+                   <!-- Button to submit registration -->
+                   <div class="submit">
+
+                       <input type="button" value="Register" onclick="register()">
+                   </div>
+                   <!-- Placeholder for registration message -->
+                   <p id="msg"></p>
+               </form>
+           </div>
+       </div>
+
+        <!-- Login section -->
+        <div class="Login">
+
+             <!-- list items-->
+            <div class="list">
+                <div class="item" id="item1">
+                    <img src="./Images/anime-girl-tattoo-katana-4k-wallpaper-uhdpaper.com-738@3@a.jpg" alt="" style="filter: brightness(50%);">
+                </div>
+               
+            </div>
+            
+            <!-- Login form -->
+            <div class="SignIn">
+               
+                <!-- Form for login -->
+                <form class="LoginForm" id="LoginForm">
+                    <!-- Heading for login -->
+                    <h1>Login</h1>
+                    <div class="txt_field">
+                        <input type="text" id="UsernameInput" required>
+                        <label>Username</label>
+                        
+                    </div>
+
+                    <div class="txt_field">
+                        <input type="password" id="PasswordInput" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="forgot">
+                        forgot Password?
+                    </div>
+                    <input type="button" value="login " onclick="isRegistered()">
+                    <div class="SignUp_link" id="signUp">
+                        not a member?<a>SignUp</a>
+                    </div>
+                    
+                    <!-- Placeholder for registration message -->
+                    <p id="msg2"></p>
+                </form>
+            </div>
+        </div>
+        
+        <div class="Logout-Message">
+            <div class="container">
+                <p id="Logout-msg">Logged out Successfully!</p>
+            </div>
+        </div>
+
+        <div class="Subscribe">
+            <div class="item">
+                <img src="./Images/sunset-scenery-sky-anime-4k-wallpaper-uhdpaper.com-299@0@j.jpg" alt="" style="filter: brightness(50%);">
+
+                <div class="title">
+                    <h1><span>ENHANCE</span> YOUR SHOPPING <span>EXPERIENCE</span></h1>
+                    <div class="subHeading">
+                        <P>SUBSCRIBE FOR MEMBER ONLY DISCOUNTS AND FASTEST DELIVERY TIMES</P>
+                    </div>
+
+                </div>
+                <div class="Content">
+                    <div class="Monthly">
+                        <h1>Monthly</h1>
+                        <hr>
+                        <div class="Text">
+                            <h2>US$8.99 /mo</h2>
+                            <p>US$8.99 billed Monthly</p>
+                        </div> 
+                        <div class="buttons">
+                            <button class="selectPlan-buttons1">Select plan</button>
+                            <button class="selected1" style="display: none;" >Selected!</button>
+                        </div>                      
+                    </div>
+                    <div class="Annual">
+                        <h1>Annual</h1>
+                        <hr>
+                        <div class="Text">
+                            <h2>US$5.00 /mo </h2>
+                            <h3>44% OFF</h3>
+                            <p>US$59.99 billed every 12 months</p>
+                        </div> 
+                        <div class="buttons">
+                            <button class="selectPlan-buttons2">Select plan</button>
+                            <button class="selected2" style="display: none;">Selected!</button>
+                        </div>                      
+                    </div>
+                    <div class="Quarterly">
+                        <h1>Quarterly</h1>
+                        <hr>
+                        <div class="Text">
+                            <h2>US$7.50 /mo</h2>
+                            <p>US$22.50 billed every 3 months</p>
+                        </div> 
+                        <div class="buttons">
+                            <button class="selectPlan-buttons3">Select plan</button>
+                            <button class="selected3" style="display: none;" >Selected!</button>
+                        </div>                      
+                    </div>
+
+                </div>
+
+                <div class="Coupon">
+                    <div class="text"> Have a discount coupon?</div>
+                    <div class="coupon-Container">
+                        <input type="text" id="searchCoupon">
+                        <div class="logo"><i class="ri-price-tag-3-fill"></i></div>
+                        <button>Apply</button>
+
+                    </div>
+                    
+                    
+                </div>
+
+                
+            </div>
+
+
+        </div>
+
+        <div class="Contacts">
+
+            <div class="list">
+                <div class="item" id="item1">
+                    <img src="./Images/beach-waves-night-palm-trees-starry-sky-scenery-digital-art-4k-wallpaper-uhdpaper.com-11@0@j.jpg" alt="" style="filter: brightness(50%);">
+                    
+                </div>
+                <div class="horn-girl">
+                    <img src="./Images/horn-girl.png" alt="" style="filter: brightness(100%);">
+                </div>
+               
+
+               
+            </div>
+
+            <div class="title">
+                <h1>Contacts</h1>
+                <div class="subheading">
+                    <h2>GOT A <span>QUESTION</span> FOR US? LET <span>US</span> KNOW</h2>
+                </div>
+            </div>
+
+            <div class="logo-Container">
+                <div class="logo1">
+                    <div class="logo">
+                        <i class="ri-phone-fill"></i>
+
+                    </div>
+                   
+                    <div class="text">
+                        <h1>PHONE</h1>
+                        <P>+971 55-293-4769</P>
+                    </div>
+
+                </div>
+                <div class="logo2">
+                    <div class="logo">
+                        <i class="ri-map-pin-2-fill"></i>
+
+                    </div>
+                    <div class="text">
+                        <h1>ADDRESS</h1>
+                        <P>4871 Sugar Camp Broad</P>
+                        <P>New York, USA</P>
+                        <P>5392242</P>
+                    </div>
+                   
+                </div>
+                <div class="logo3">
+
+                    <div class="logo">
+                        <i class="ri-mail-fill"></i>
+                        <div class="text">
+                            <h1>EMAIL</h1>
+                            <P>DayDream@assitance.com</P>
+                           
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <div class="form-Container">
+                <form>
+                    
+                    <div class="title">Send Message</div>
+
+                    <div class="txt_field">
+                        <input placeholder="Full Name" type="text" class="contact-Name" required>
+                        
+                    </div>
+
+                    <div class="txt_field">
+                        <input placeholder="Email" type="email" class="contact-Email" required>
+                        
+                    </div>
+
+                    <div class="txt_field2">
+                        <input placeholder="Type Your Message... " type="text" class="contact-Message" required>
+                        
+                    </div>
+
+                    <input type="button" value="Submit">
+
+
+
+
+
+
+                </form>
+            </div>
+
+            
+
+
+
+
+        </div>
+        <div class="About">
+
+            <div class="list">
+                <div class="item">
+                    <img src="./Images/sunset-clouds-anime-scenery-4k-wallpaper-uhdpaper.com-647@0@j.jpg" alt="">
+                </div>
+                <div class="red-Sword">
+                    <img src="./Images/red-girl-sword.png" alt="">
+
+                </div>
+
+                <div class="title">
+                    <h1>OUR  <span>MISSION</span></h1>
+                    <p>ANIME FASHION MADE <span>SIMPLE</span>, DRESS IN STYLE WITH <span>DAYDREAM</span> CLOTHING</p>
+                </div>
+                
+                <div class="Content">
+                    <div class="Container">
+                        <p>At Daydream, our mission is to bring the vibrant world of anime to life through fashion, creating unique and stylish apparel for men, women, and kids. We aim to inspire and empower our customers by offering high-quality, anime-inspired clothing that allows them to express their passion and individuality. Our dedication to exceptional design, comfort, and inclusivity ensures that everyone, from seasoned anime fans to newcomers, can find something they love. <br> <br> In today’s digital age, a seamless online experience is essential. Our website is designed to be user-friendly, responsive, and visually appealing, ensuring that our customers can easily navigate and find what they are looking for. From detailed product descriptions to high-quality images and easy checkout processes, we aim to make online shopping a delightful experience. <br> <br> We are dedicated to making anime fashion accessible, enjoyable, and inclusive for everyone. Whether you’re looking for the perfect outfit to wear to your next convention or just want to incorporate your love for anime into your everyday wardrobe, we are here to help you turn your fashion dreams into reality.</p>
+
+                    </div>
+                    
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    
+
+        
+
+      
+
+
+
+
+
+
+    
+
+
+    <script type="module" src="./JS/index.js"></script>
+    <script type="module" src="./JS/mensProducts.js"></script>
+    <script type="module" src="./JS/womensProducts.js"></script>
+    <script type="module" src="./JS/kidsProducts.js"></script>
+    <script type="module" src="./JS/Register.js"></script>
+    <script type="module" src="./JS/Login.js"></script>
+    <script type="module" src="./JS/Validation.js"></script>
+    
+
+        
+
+</body>
+</html>
